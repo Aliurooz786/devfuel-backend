@@ -42,6 +42,15 @@ public class NutritionLog {
     @Column(name = "total_calories")
     private Integer totalCalories;
 
+    @Column(name = "protein")
+    private Double protein;
+
+    @Column(name = "carbs")
+    private Double carbs;
+
+    @Column(name = "fat")
+    private Double fat;
+
     /**
      * Serialized JSON of the extracted items array.
      * Stored as TEXT; upgrade to JSONB with hypersistence-utils when needed.
